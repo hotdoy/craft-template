@@ -296,7 +296,6 @@ module.exports = {
 	variants: {
 		padding: ['responsive', 'first'],
 		margin: ['responsive', 'first'],
-		accessibility: ['responsive', 'focus', 'group-focus']
 	},
 	plugins: []
 };
