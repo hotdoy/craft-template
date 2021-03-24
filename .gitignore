@@ -3,6 +3,7 @@
 /craft/storage/*
 !/craft/storage/rebrand
 .vscode/sftp.json
+ftpsync.settings
 node_modules
 .DS_Store
 web/assets/js/libs/
