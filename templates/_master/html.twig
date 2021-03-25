@@ -12,27 +12,27 @@
 		<head>
 			{% block metadata %}{% include "_partials/metadata.twig" %}{% endblock %}
 			{% block canonical %}<link rel="canonical" href="{{ entry.url }}" />{% endblock %}
-			{% include "_masters/favicon.twig" %}
-			{% include "_masters/alternates.twig" %}
-			{% include "_masters/fonts.twig" %}
-			{% include "_masters/css.twig" %}
-			{% include "_masters/utils/livereload.twig" %}
+			{% include "_master/favicon.twig" %}
+			{% include "_master/alternates.twig" %}
+			{% include "_master/fonts.twig" %}
+			{% include "_master/css.twig" %}
+			{% include "_master/utils/livereload.twig" %}
 			{% include "_lib/gtm-head" %}
 			{% block head %}{% endblock %}
 		</head>
 		<body class="min-w-min">
 			{% include "_lib/gtm-body" %}
-			{% include "_masters/sr-nav.twig" %}
+			{% include "_master/sr-nav.twig" %}
 			<div id="site">
-				{% block siteHeader %}{% include "_site/header" %}{% endblock %}
+				{% block header %}{% include "_partials/header" %}{% endblock %}
 				<div id="pages">
 					<div class="page" data-page-url="{{ entry.url }}">
 						{% block page %}{% endblock %}
 					</div>
 				</div>
-				{% block siteFooter %}{% include "_site/footer" %}{% endblock %}
+				{% block footer %}{% include "_partials/footer" %}{% endblock %}
 			</div>
-			{% include "_masters/js.twig" %}
+			{% include "_master/js.twig" %}
 			{% include "_lib/admin.twig" %}
 		</body>
 	</html>

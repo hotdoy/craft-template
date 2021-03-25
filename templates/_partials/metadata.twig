@@ -69,3 +69,14 @@
 {% if imageUrl %}
 <meta name="twitter:image" content="{{ imageUrl }}">
 {% endif %}
+
+{% if entry.uri == '__home__' and configuration.shareImage.one() %}
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"logo": "{{ imageUrl }}" 
+		"url": "{{ url }}",
+	}
+</script>
+{% endif %}
