@@ -3,9 +3,7 @@
 <main>
 	{% block modules %}
 	{% for module in modules %}
-		{% include ["_modules/" ~ module.type|kebab, "_modules/_undefined"] with { module: module } only %}
+		{% include ["_module/" ~ module.type|kebab, "_module/_undefined"] with { module: module } only %}
 	{% endfor %}
 	{% endblock %}
-
-
 </main>

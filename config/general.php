@@ -31,7 +31,7 @@ return [
 
         'useEmailAsUsername' => true,
 
-        'errorTemplatePrefix' => '_pages/errors/',
+        'errorTemplatePrefix' => '_page/',
 
         'gtmId' => '',
 
@@ -43,7 +43,7 @@ return [
     // Dev environment settings
     'dev' => [
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-        'devMode' => true,
+        'devMode' => false,
 
         'disallowRobots' => true,
     ],
