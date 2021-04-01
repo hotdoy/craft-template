@@ -1,9 +1,0 @@
-{% set modules = modules ?? entry.modules.all() ?? [] %}
-
-<main>
-	{% block modules %}
-	{% for module in modules %}
-		{% include ["_module/" ~ module.type|kebab, "_module/_undefined"] with { module: module } only %}
-	{% endfor %}
-	{% endblock %}
-</main>
