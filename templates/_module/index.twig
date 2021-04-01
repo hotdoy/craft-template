@@ -1,5 +1,9 @@
-{% extends "_module/_base" %}
+{% extends '_module/_base' %}
 
-{% if devMode %}
-	<h2>Mising Template '{{module.type}}'</h2>
-{% endif %}
+{% block content %}
+	{% if devMode %}
+		<h2>
+			Mising Template '{{ module.type }}'
+		</h2>
+	{% endif %}
+{% endblock %}
